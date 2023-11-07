@@ -104,6 +104,8 @@ while page_number <= PAGES:
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # Save the data from places list to a CSV file
+# filename = '{QUERY} in {LOCATION} ({PAGES} pages) {timestamp}.csv'
+
 with open(f'{QUERY} in {LOCATION} ({PAGES} pages) {timestamp}.csv', 'w') as f:
     writer = csv.writer(f)
     writer.writerow(
